@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=landscape">
+    <title>Carrera - Super Mario Kart 3D</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hud.css">
+    <script src="lib/three.min.js"></script>
+</head>
+<body>
+    <div id="game-canvas-container"></div>
+    
+    <div id="hud">
+        <div id="pos">1º / 6</div>
+        <div id="lap">VUELTA 1 / 3</div>
+        <div id="coins">🪙 <span id="coin-val">0</span></div>
+        <div id="speed">0 KM/H</div>
+        <button id="mute-btn" class="hud-btn">🎵</button>
+    </div>
+
+    <div id="item-slot">?</div>
+
+    <div id="controls">
+        <div class="left-group">
+            <button id="b-left" class="t-btn">◀</button>
+            <button id="b-right" class="t-btn">▶</button>
+        </div>
+        <div class="right-group">
+            <button id="b-drift" class="t-btn blue">DRIFT</button>
+            <button id="b-item" class="t-btn yellow">USAR</button>
+            <button id="b-gas" class="t-btn green">GAS</button>
+            <button id="b-brake" class="t-btn red">FRENO</button>
+        </div>
+    </div>
+
+    <div id="result-modal" class="hidden">
+        <h2 id="res-title">¡VICTORIA!</h2>
+        <p id="res-desc">Posición final: 1º</p>
+        <button id="menu-return-btn" class="btn">VOLVER AL MENÚ</button>
+    </div>
+
+    <script src="lib/three.min.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+              </html>
